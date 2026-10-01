@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Jose Suárez · Software Engineer" width="100%">
+  <img src="assets/banner.svg" alt="Jose Suárez Felipe · Software Engineer" width="100%">
 </p>
 
 <p align="center">
@@ -11,13 +11,13 @@
 ```ts
 const jose = {
   location: "Tenerife, Spain 🌋",
-  role: "Software Engineer — backend & full-stack",
+  role: "Software Engineer - backend & full-stack",
   education: [
     "BSc Computer Science Engineering · Universidad de La Laguna (2026)",
     "MSc Cloud Development & Operations · Universidad Europea (in progress)",
   ],
   experience: "Software Engineering Intern · Atos Consulting Canarias",
-  currentlyBuilding: "house-of-decks.com — real-time multiplayer card games",
+  currentlyBuilding: "house-of-decks.com - real-time multiplayer card games",
   lookingFor: ["Junior Backend", "Full-Stack", "Cloud / DevOps"],
 };
 ```
