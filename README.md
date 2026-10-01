@@ -17,7 +17,7 @@ const jose = {
     "MSc Cloud Development & Operations · Universidad Europea (in progress)",
   ],
   experience: "Software Engineering Intern · Atos Consulting Canarias",
-  currentlyBuilding: "house-of-decks.com - real-time multiplayer card games",
+  currentlyBuilding: "house-of-decks.com - 10 real-time multiplayer card games",
   lookingFor: ["Junior Backend", "Full-Stack", "Cloud / DevOps"],
 };
 ```
