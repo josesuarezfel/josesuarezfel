@@ -28,7 +28,7 @@ const jose = {
   <tr>
     <td width="50%" valign="top">
       <h3>🃏 <a href="https://house-of-decks.com">House of Decks</a></h3>
-      <p>Real-time multiplayer card game platform, <b>live in production</b>.</p>
+      <p>Real-time multiplayer card game platform with <b>10 games</b>, <b>live in production</b>.</p>
       <ul>
         <li>Server-authoritative gameplay over WebSockets</li>
         <li>Shared game engine: turns, AI bots, versioned migrations</li>
