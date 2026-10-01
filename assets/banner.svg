@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.6" stop-color="#111a2e"/>
+      <stop offset="1" stop-color="#1b1036"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <style>
+      .name { font: 800 64px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #f8fafc; letter-spacing: -1px; }
+      .sub { font: 500 22px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #94a3b8; }
+      .mono { font: 500 22px 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .prompt { fill: #38bdf8; }
+      .role { fill: #e2e8f0; opacity: 0; }
+      .r1 { animation: cycle 12s infinite 0s; }
+      .r2 { animation: cycle 12s infinite 3s; }
+      .r3 { animation: cycle 12s infinite 6s; }
+      .r4 { animation: cycle 12s infinite 9s; }
+      @keyframes cycle {
+        0% { opacity: 0; transform: translateY(8px); }
+        4% { opacity: 1; transform: translateY(0); }
+        21% { opacity: 1; transform: translateY(0); }
+        25% { opacity: 0; transform: translateY(-8px); }
+        100% { opacity: 0; }
+      }
+      .cursor { fill: #a78bfa; animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      .card { filter: url(#shadow); }
+      .c1 { animation: float 6s ease-in-out infinite; }
+      .c2 { animation: float 6s ease-in-out infinite 1.5s; }
+      .c3 { animation: float 6s ease-in-out infinite 3s; }
+      @keyframes float { 0%,100% { translate: 0 0; } 50% { translate: 0 -12px; } }
+      .suit { font: 700 46px 'Segoe UI Symbol', 'DejaVu Sans', Arial, sans-serif; }
+      .rank { font: 800 22px 'Segoe UI', Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="18" fill="url(#grid)"/>
+  <circle cx="1020" cy="40" r="180" fill="#a78bfa" opacity="0.08"/>
+  <circle cx="140" cy="300" r="160" fill="#38bdf8" opacity="0.06"/>
+
+  <text x="64" y="128" class="name">Jose Suárez</text>
+  <rect x="66" y="148" width="120" height="5" rx="2.5" fill="url(#accent)"/>
+  <text x="64" y="196" class="sub">Software Engineer · Tenerife, Spain</text>
+
+  <g class="mono">
+    <text x="64" y="252" class="prompt">~$</text>
+    <text x="110" y="252" class="role r1">building backends with Java &amp; Spring Boot</text>
+    <text x="110" y="252" class="role r2">shipping frontends with Angular &amp; React</text>
+    <text x="110" y="252" class="role r3">running real-time apps over WebSockets</text>
+    <text x="110" y="252" class="role r4">deploying to the cloud with Docker &amp; CI/CD</text>
+  </g>
+
+  <g transform="rotate(-12 900 170)"><g class="card c1">
+    <rect x="850" y="95" width="100" height="145" rx="10" fill="#f8fafc"/>
+    <text x="862" y="122" class="rank" fill="#0f172a">A</text>
+    <text x="900" y="186" class="suit" fill="#0f172a" text-anchor="middle">♠</text>
+  </g></g>
+  <g class="card c2">
+    <rect x="950" y="85" width="100" height="145" rx="10" fill="#f8fafc"/>
+    <text x="962" y="112" class="rank" fill="#e11d48">K</text>
+    <text x="1000" y="176" class="suit" fill="#e11d48" text-anchor="middle">♥</text>
+  </g>
+  <g transform="rotate(12 1100 170)"><g class="card c3">
+    <rect x="1050" y="95" width="100" height="145" rx="10" fill="url(#accent)"/>
+    <text x="1100" y="180" fill="#0b1220" text-anchor="middle" style="font: 800 34px Consolas, Menlo, monospace">&lt;/&gt;</text>
+  </g></g>
+</svg>
